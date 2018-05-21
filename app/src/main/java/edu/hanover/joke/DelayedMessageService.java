@@ -23,7 +23,7 @@ public class DelayedMessageService extends IntentService {
     protected void onHandleIntent(Intent intent) {
         synchronized (this) {
             try {
-                wait(10000);
+                wait(50000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
